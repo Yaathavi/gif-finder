@@ -1,33 +1,42 @@
 import React, { Component } from 'react';
-/*import './App.css';*/
 import axios from 'axios';
+/*import './App.css';*/
 
 export default class Input extends Component {
 
 constructor(){
     super();
-    this.state = {"link":'', "data":"hello"};
+    this.state = {"link":'', "giflinks":[]};
 
 }
 myChangeHandler = (event) => {
     this.setState({link: event.target.value});
   }
   submit = (event) => {
-      console.log("test");
-      this.setState ({
-        data: "bye"
-      });
-      
+    event.preventDefault();
+
+
     axios.post('/getdata', {'first': this.state.link})
     .then((res) => {
-      console.log("test");  
-
+        this.setState({"giflinks":res.data})
+    //   this.setState ({
+    //     data: res.data
+    //   });
+    //   console.log(this.state.data);
     }, (error) => {
       console.log(error);
     });
+    
   }
 
     render() {
+
+        var gifs = [];
+        for (var x=0; x<10; x++){
+            gifs.push(<img src={this.state.giflinks[x]}></img>)
+            
+        }
+
         return(     
 
                 <div className="App-div">
@@ -51,10 +60,13 @@ myChangeHandler = (event) => {
                         
                         
                     </form> 
-      
+      {
+          gifs
+      }
                 </div>
              
 
                 )
     }
 }
+
