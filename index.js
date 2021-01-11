@@ -76,6 +76,9 @@ app.post("/getdata",(req, res) => {
   
 });
 
+app.get('/', (req, res) => {
+  res.send("test")
+}) 
 app.listen(port, () => console.log(`Listening on port ${port}!`)); //starts a server and listens on port 5000 for connections.
 
 
