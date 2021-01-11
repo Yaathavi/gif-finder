@@ -3,11 +3,15 @@ const app = express();
 const port = process.env.PORT || 5000
 const bodyParser = require("body-parser");
 const fetch = require('node-fetch');
+const cors = require("cors"); //makes sure endpoints are being accessed the right way
+const path = require('path'); //serve ur static file
 
 require('dotenv').config();
 const APIToken = process.env.API_KEY;
 const GIFKEY = process.env.GIFKEY;
 
+app.use(cors());
+app.use(express.static(path.join(__dirname, 'frontend/build')));
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
