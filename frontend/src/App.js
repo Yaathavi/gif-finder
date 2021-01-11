@@ -1,16 +1,14 @@
-/* import logo from './logo.svg'; */
 import Input from './Input'
-//import './App.css';
+import './App.css';
 
 function App() {
   return (
    
-    <Input /> 
-    
+    <Input className='App-body'/> 
+   
   );
 }
 
-export default App;
+export default App; 
 
 
-    
