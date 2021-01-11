@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Initialize client
+// Initialize the client
 const {ClarifaiStub, grpc} = require("clarifai-nodejs-grpc");
 
 const stub = ClarifaiStub.grpc();
