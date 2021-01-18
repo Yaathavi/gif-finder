@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 .backgroundc {
-  background-color: #D1BDF0;
+  background-color: #253761;
   align-items: center;
   justify-content: center;
+  
 } 
 
 /* .App-logo {
@@ -16,27 +19,89 @@
 } */
 
 
-  /* .App-header {
-  min-height: 10vh;
+   .App-header {
+  /* min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   font-weight: bold;
+  */
+  height: 15vh;
+  font-size: 3.5vh;
   text-decoration: underline; 
-  color: black;
-}   */
+  font-family: 'Playfair Display', serif;
+  
+}   
 
 
   .App-div {
-  background-color: #D1BDF0;
-  min-height: 15vh;
+  background-color: #253761;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  
+  font-family: 'Playfair Display', serif;
+  color: #D5C6E0;
+  font-size: 2vh;
+  
 }  
+
+.App-form {
+
+  border: 0;
+  font-size: 1.4vw;
+  padding: 0.5em;
+  font-family: 'Montserrat';
+
+}
+
+input{
+  font-size: 3;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  border-radius: 15px 0px 0px 15px;
+  width: 39vw;
+  font-family: inherit;
+  border-width:0px;
+  border:none;
+  padding-left: 0.8vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+}
+
+button{
+font-size: 5;
+-moz-box-sizing: content-box;
+-webkit-box-sizing: content-box;
+box-sizing: content-box;
+border-radius: 0px 15px 15px 0px;
+font-family: 'Montserrat';
+border-width:0px;
+border:none;
+cursor: pointer;
+background-color: #D5C6E0;
+color: #070606;
+padding-left: 0.8vw;
+padding-right: 0.8vw;
+padding-top: 0.8vw;
+padding-bottom: 0.8vw;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+button:focus {
+  outline-width: 0;
+}
 
 /* .App-link {
   color: #05000C; */

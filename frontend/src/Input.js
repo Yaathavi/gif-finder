@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 import axios from 'axios';
 import './App.css';
 
@@ -32,9 +34,10 @@ myChangeHandler = (event) => {
     render() {
 
         var gifs = [];
+        var carousel = (<Carousel slides={[]} arrows />)
         for (var x=0; x<10; x++){
             gifs.push(<img src={this.state.giflinks[x]}></img>)
-            
+            carousel = (<Carousel slides={gifs} arrows />)
         }
 
         return(     
@@ -47,7 +50,7 @@ myChangeHandler = (event) => {
         
                     
                     <h2> Enter the URL of the image you want to find similar GIFs for: </h2>
-                    <form>
+                    <form className="App-form">
                     
                         <input
                             type='text'
@@ -59,10 +62,11 @@ myChangeHandler = (event) => {
                           <p> {this.state.data} </p>  
                         
                         
-                    </form> 
-      {
-          gifs
-      }
+                    </form > 
+
+          {carousel}
+
+            
                 </div>
              
 

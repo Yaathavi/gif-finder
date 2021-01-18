@@ -61,7 +61,7 @@ app.post("/getdata",(req, res) => {
         }
         console.log(array); 
         //res.send({"name":array}); sends array back to frontend
-        fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIFKEY}&limit=10&q=${array[0]}`)
+        fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIFKEY}&limit=10&q=${array[1]}`)
           .then(response => response.json())
           .then(data => {
 
