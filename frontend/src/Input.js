@@ -50,7 +50,7 @@ myChangeHandler = (event) => {
                     </header>
         
                   <div2 className="App-div2"> 
-                     <a href="https://github.com/Yaathavi" target="_blank" rel="noopener noreferrer"> Github</a>
+                     <a href="https://github.com/Yaathavi/gif-finder" target="_blank" rel="noopener noreferrer"> Github</a>
                     </div2>
 
                     <h2> Enter the URL of the image you want to find similar GIFs for: </h2>
