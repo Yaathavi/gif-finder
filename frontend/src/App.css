@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 
 .backgroundc {
   background-color: #253761;
+  /* #253761; */
   align-items: center;
   justify-content: center;
   
@@ -20,32 +24,41 @@
 
 
    .App-header {
-  /* min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  font-weight: bold;
-  */
-  height: 15vh;
+
+  height: 13vh;
   font-size: 3.5vh;
-  text-decoration: underline; 
-  font-family: 'Playfair Display', serif;
+  /* text-decoration: underline;  */
+  text-decoration: bold; 
+  font-family: 'Montserrat';
+  color: 	#ceafce;
   
 }   
 
+a:visited {
+  color: #ceafce;
+}
+
+.App-div2 {
+  
+  height: 5vh;
+  font-size: 1.5vh;
+  font-family: 'Montserrat', serif;
+  color:	#e3d3e3;
+ 
+ 
+}   
 
   .App-div {
-  background-color: #253761;
-  min-height: 5vh;
+ 
+  /* background-color:#253761; */
+  min-height: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   
-  font-family: 'Playfair Display', serif;
-  color: #D5C6E0;
-  font-size: 2vh;
+  font-family: 'Montserrat', serif;
+  color: #ceafce;
+  font-size: 1.5vh;
   
 }  
 
@@ -83,8 +96,8 @@ font-family: 'Montserrat';
 border-width:0px;
 border:none;
 cursor: pointer;
-background-color: #D5C6E0;
-color: #070606;
+background-color: #ceafce;
+color: #070707;
 padding-left: 0.8vw;
 padding-right: 0.8vw;
 padding-top: 0.8vw;
