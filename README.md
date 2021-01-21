@@ -47,7 +47,7 @@ If you need to update `npm`, you can make it using `npm`. After running the foll
 ## Install
 
     $ git clone https://github.com/Yaathavi/gif-finder
-    $ cd ezshort
+    $ cd gif-finder
     $ npm install
 
 ## Running the project
